@@ -1,0 +1,11 @@
+# Secrets (Don't let these go to GitHub!)
+.env
+*.env
+
+# Large Folders
+node_modules/
+backend/venv/
+__pycache__/
+
+# System Files
+.DS_Store
