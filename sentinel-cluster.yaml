@@ -1,0 +1,14 @@
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+name: sovereign-mesh-cluster
+nodes:
+- role: control-plane
+  extraPortMappings:
+  - containerPort: 30000
+    hostPort: 80
+    protocol: TCP
+- role: worker
+- role: worker
+networking:
+  disableDefaultCNI: true # Crucial for eBPF Sentinel take-over
+  podSubnet: "10.10.0.0/16"
