@@ -12,7 +12,7 @@ load_dotenv()
 # --- 1. AI CONFIGURATION (Gemini Free Tier) ---
 Settings.embed_model = GeminiEmbedding(
     model_name="models/embedding-001", 
-    api_key=os.getenv("Your_API_Gemini_key")
+    api_key=os.getenv("Your_API_Gemini_key ")
 )
 
 # --- 2. INFRASTRUCTURE SETUP ---
